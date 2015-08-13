@@ -2,7 +2,7 @@
 
 function dbConnect()
 {
-    $serverName = 'postgresql';
+    $serverName = '10.0.1.242';
     $uName = 'gisteam';
     $pWord = 'gisDB1';
     $db = 'external';
