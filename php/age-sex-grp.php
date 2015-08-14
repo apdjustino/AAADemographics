@@ -44,7 +44,26 @@ function getAgeSex()
     $conn = dbConnect();
     
     $sqlCmd = <<< sql
-            select distinct age_sex_grp from aaa_demographics order by age_sex_grp
+            select distinct age_sex_grp from aaa_demographics
+            where age_sex_grp IN
+            (
+            'Female: - 60 and 61 years',
+            'Female: - 62 to 64 years',
+            'Female: - 65 and 66 years',
+            'Female: - 67 to 69 years',
+            'Female: - 70 to 74 years',
+            'Female: - 75 to 79 years',
+            'Female: - 80 to 84 years',
+            'Female: - 85 years and over',
+            'Male: - 60 and 61 years',
+            'Male: - 62 to 64 years',
+            'Male: - 65 and 66 years',
+            'Male: - 67 to 69 years',
+            'Male: - 70 to 74 years',
+            'Male: - 75 to 79 years',
+            'Male: - 80 to 84 years',
+            'Male: - 85 years and over'
+            )order by age_sex_grp
 sql;
     
     $stmt = $conn->query($sqlCmd);    
