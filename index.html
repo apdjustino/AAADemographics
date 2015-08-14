@@ -134,13 +134,34 @@
                         <div id="legend" class="panel-collapse collapse in">
                             <div class="panel-body" style="padding: 15px 15px;">
                                 <p>
-                                    <img src="http://gis.drcog.org/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=DRCOGPUB:nursing_homes" alt="Nursing Home" class="nhImage"/>  Nursing Home
+                                   <svg width="225" height="25">
+                                       <g transform="translate(12.5,12.5)">
+                                           <circle cx="0" cy="0" r="7.5" fill="#E95D22"></circle>
+                                       </g>
+                                       <g transform="translate(25,16.5)">
+                                           <text x="0" y="0">Churches</text>
+                                       </g>
+                                   </svg>
                                 </p>
                                 <p>
-                                    <img src="http://gis.drcog.org/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=DRCOGPUB:assisted_living_facilities" alt="Assisted Living Facility" class="alrImage"/>  Assisted Living Facility
+                                    <svg width="225" height="25">
+                                        <g transform="translate(5, 12.5)">
+                                            <line x1="0" y1="0" x2="15" y1="0" stroke="#A22E3B" stroke-width="2"></line>
+                                        </g>
+                                        <g transform="translate(25, 16.5)">
+                                            <text x="0" y="0">Transit Routes</text>
+                                        </g>
+                                    </svg>
                                 </p>
                                 <p>
-                                    <img src="http://gis.drcog.org/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=DRCOGPUB:aaa_living_communities" alt="Living Communities" class="alrImage"/>  Living Communities
+                                    <svg width="225" height="25">
+                                        <g transform="translate(12.5,12.5)">
+                                            <circle cx="0" cy="0" r="7.5" class="stops"></circle>
+                                        </g>
+                                        <g transform="translate(25,16.5)">
+                                            <text x="0" y="0">Transit Stops</text>
+                                        </g>
+                                    </svg>
                                 </p>
                             </div>
                         </div>
