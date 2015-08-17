@@ -43,7 +43,7 @@
             <li class="dropdown">
                 <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe" style="color: white"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li class="no-mobile"><a href="#" onclick="map.fitBounds(nHomes.getBounds()); return false;"><i class="icon-fullscreen"></i>&nbsp;&nbsp;Zoom To Full Extent</a></li>
+                    <li class="no-mobile" id="zoomToFullExtent"><a href="#"><i class="icon-fullscreen"></i>&nbsp;&nbsp;Zoom To Full Extent</a></li>
                 </ul>
             </li>
         </ul>
@@ -193,9 +193,11 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe"></i>&nbsp;Metadata <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#nursing-homes-tab" data-toggle="tab">Nursing Homes Data</a></li>
-                            <li><a href="#assisted-living-tab" data-toggle="tab">Assisted Living Facility Data</a></li>
-                            <li><a href="#living-communities-tab" data-toggle="tab">Living Communities Data</a></li>
+                            <li><a href="#demographics-tab" data-toggle="tab">Demographic Data</a></li>
+                            <li><a href="#income-tab" data-toggle="tab">Income Data</a></li>
+                            <li><a href="#churches-tab" data-toggle="tab">Churches Data</a></li>
+                            <li><a href="#transit-routes-tab" data-toggle="tab">Transit Routes Data</a></li>
+                            <li><a href="#transit-stops-tab" data-toggle="tab"/>Transit Stops Data</li>
                         </ul>
                     </li>
                 </ul>
@@ -212,19 +214,29 @@
                         <p>The detailed disclaimer can be found <a href="http://drcog.org/index.cfm?page=Disclaimer" target="_blank">here.</a></p>
 
                     </div>
-                    <div class="tab-pane fade" id="nursing-homes-tab">
+                    <div class="tab-pane fade" id="demographics-tab">
                         <ul>
-                            <li>Nursing Home data can be downloaded at <a href="http://gis.drcog.org" target="_blank">DRCOG Regional Data Catalog</a>. </li>
+                            <li>Demographics data is not currently available for download.</li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="assisted-living-tab">
+                    <div class="tab-pane fade" id="income-tab">
                         <ul>
-                            <li>Assisted living facility data can be downloaded at <a href="http://gis.drcog.org" target="_blank">DRCOG Regional Data Catalog</a>. </li>
+                            <li>Income data is not currently available for download.</li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="assisted-living-tab">
+                    <div class="tab-pane fade" id="churches-tab">
                         <ul>
-                            <li>Living communities data can be downloaded at <a href="http://gis.drcog.org" target="_blank">DRCOG Regional Data Catalog</a>. </li>
+                            <li>Churches data is not currently available for download.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="transit-routes-tab">
+                        <ul>
+                            <li>Transit routes data can be downloaded at <a href="http://gis.drcog.org" target="_blank">DRCOG Regional Data Catalog</a>. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="transit-stops-tab">
+                        <ul>
+                            <li>Transit stops data can be downloaded at <a href="http://gis.drcog.org" target="_blank">DRCOG Regional Data Catalog</a>. </li>
                         </ul>
                     </div>
                 </div>

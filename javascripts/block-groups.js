@@ -2,8 +2,15 @@
  * Created by JMartinez on 5/21/2015.
  */
 
-//var pg = require('pg');
-//var conString = "postgres://postgres:postgres@localhost/postgres"
+$('a.toggle').click(function(){
+    $('a.toggle i').toggleClass('icon-chevron-left icon-chevron-right');
+    $('#mapCanvas').toggleClass('col-sm-9 col-lg-9 col-sm-12 col-lg-12');
+    $('#sidebar').toggle();
+    map.invalidateSize();
+    return false;
+});
+
+
 var app = angular.module("app", []);
 app.controller('block-groups-ctrl', function($scope, $http){
 
@@ -61,7 +68,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
                 });
         }
 
-    })
+    });
 
     $scope.$watch('checked', function(nv, ov){
         if(nv !== ov){
@@ -87,7 +94,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
             }
 
         }
-    })
+    });
 
     $scope.$watch('stopsChecked', function(nv, ov){
         if(nv !== ov){
@@ -100,7 +107,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
             }
 
         }
-    })
+    });
 
 
     $scope.query = function(){
@@ -230,7 +237,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
                     return coord.y;
                 })
                 g.selectAll(".routes")
-                    .attr("d", path);
+                    .attr("d", path.pointRadius(function(d){return 2;}));
                 g.selectAll(".stops")
                     .attr("d", path);
 
@@ -357,7 +364,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
 
             var shape = topojson.feature(stops, stops.objects.stops2);
             var transform = d3.geo.transform({point: projectPoint}),
-                path = d3.geo.path().projection(transform);
+                path = d3.geo.path().projection(transform).pointRadius(function(d){return 2;});
 
             var stops = g.selectAll(".stops")
                 .data(shape.features)
@@ -385,5 +392,9 @@ app.controller('block-groups-ctrl', function($scope, $http){
 
     //initial map load
     queue().defer(d3.json, 'data/drcog_bg14.json').await(loadShapes);
+
+    $('#zoomToFullExtent').click(function(){
+        map.setView([39.75, -104.95], 10);
+    });
 
 });
