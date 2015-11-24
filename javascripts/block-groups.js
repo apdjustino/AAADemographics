@@ -119,13 +119,14 @@ app.controller('block-groups-ctrl', function($scope, $http){
 
 
     $scope.query = function(){
-        toggleSideBar();
+
         if($scope.selectedDataTable === 'Demographics'){
            var dataToSend = {race: $scope.selectedCategory, ageGrp: $scope.selectedAgeGrp};
 
            $http.post('php/query-demographics.php', dataToSend)
                .success(function(response){
                    setMap(response);
+                   toggleSideBar();
                    //console.log(response)
                })
 
@@ -136,6 +137,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
            $http.post('php/query-income.php', dataToSend)
                .success(function(response){
                    setMap(response); //call d3 function that will color map
+                   toggleSideBar();
                    //console.log(response);
                })
        }
