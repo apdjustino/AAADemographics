@@ -240,9 +240,7 @@ path.zones:hover{
 .q5-7 {fill:#2171b5; opacity:.5;}
 .q6-7 {fill:#084594; opacity:.5;}
 
-circle{
-    fill:#E95D22;
-}
+
 
 
 .check{
@@ -271,4 +269,12 @@ label{
 .stops{
     fill:#4490AF;
 
+}
+
+.superMarkets{
+    fill:#00b33c;
+}
+
+.church{
+    fill:#E95D22;
 }

@@ -29,6 +29,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
     $scope.checked = false;
     $scope.routeChecked = false;
     $scope.stopsChecked = false;
+    $scope.storesChecked = false;
     var mapById = d3.map();
     var percent = d3.format(",.1%");
 
@@ -84,12 +85,12 @@ app.controller('block-groups-ctrl', function($scope, $http){
                 addChurches();
             }
             else{
-                g.selectAll("circle")
+                g.selectAll(".church")
                     .remove();
             }
 
         }
-    })
+    });
 
     $scope.$watch('routeChecked', function(nv, ov){
         if(nv !== ov){
@@ -111,6 +112,19 @@ app.controller('block-groups-ctrl', function($scope, $http){
             }
             else{
                 g.selectAll(".stops")
+                    .remove();
+            }
+
+        }
+    });
+
+    $scope.$watch('storesChecked', function(nv, ov){
+        if(nv !== ov){
+            if(nv === true){
+                addSupermarkets();
+            }
+            else{
+                g.selectAll(".superMarkets")
                     .remove();
             }
 
@@ -324,6 +338,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
                 .data(churches)
                 .enter()
                 .append("circle")
+                .attr("class", "church")
                 .attr("r", 3)
                 .attr("cx", function(d){
                     var x = d.lon;
@@ -339,6 +354,33 @@ app.controller('block-groups-ctrl', function($scope, $http){
                 })
 
             churches.append("svg:title")
+                .text(function(d){return d.name;});
+
+        });
+    }
+
+    function addSupermarkets(){
+        d3.csv('data/supermarkets.csv', function(error, stores){
+            var stores = g.selectAll("circle")
+                .data(stores)
+                .enter()
+                .append("circle")
+                .attr("class", "superMarkets")
+                .attr("r", 3)
+                .attr("cx", function(d){
+                    var x = d.lon;
+                    var y = d.lat;
+                    var coord = map.latLngToLayerPoint(new L.LatLng(y,x));
+                    return coord.x;
+                })
+                .attr("cy", function(d){
+                    var x = d.lon;
+                    var y = d.lat;
+                    var coord = map.latLngToLayerPoint(new L.LatLng(y,x));
+                    return coord.y;
+                });
+
+            stores.append("svg:title")
                 .text(function(d){return d.name;});
 
         });
