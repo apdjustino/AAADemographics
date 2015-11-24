@@ -10,6 +10,14 @@ $('a.toggle').click(function(){
     return false;
 });
 
+function toggleSideBar(){
+    $('a.toggle i').toggleClass('icon-chevron-left icon-chevron-right');
+    $('#mapCanvas').toggleClass('col-sm-9 col-lg-9 col-sm-12 col-lg-12');
+    $('#sidebar').toggle();
+    map.invalidateSize();
+    return false;
+}
+
 
 var app = angular.module("app", []);
 app.controller('block-groups-ctrl', function($scope, $http){
@@ -111,7 +119,8 @@ app.controller('block-groups-ctrl', function($scope, $http){
 
 
     $scope.query = function(){
-       if($scope.selectedDataTable === 'Demographics'){
+        toggleSideBar();
+        if($scope.selectedDataTable === 'Demographics'){
            var dataToSend = {race: $scope.selectedCategory, ageGrp: $scope.selectedAgeGrp};
 
            $http.post('php/query-demographics.php', dataToSend)
