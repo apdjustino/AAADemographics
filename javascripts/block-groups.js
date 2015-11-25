@@ -10,13 +10,7 @@ $('a.toggle').click(function(){
     return false;
 });
 
-function toggleSideBar(){
-    $('a.toggle i').toggleClass('icon-chevron-left icon-chevron-right');
-    $('#mapCanvas').toggleClass('col-sm-9 col-lg-9 col-sm-12 col-lg-12');
-    $('#sidebar').toggle();
-    map.invalidateSize();
-    return false;
-}
+
 
 
 var app = angular.module("app", []);
@@ -140,7 +134,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
            $http.post('php/query-demographics.php', dataToSend)
                .success(function(response){
                    setMap(response);
-                   toggleSideBar();
+
                    //console.log(response)
                })
 
@@ -151,7 +145,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
            $http.post('php/query-income.php', dataToSend)
                .success(function(response){
                    setMap(response); //call d3 function that will color map
-                   toggleSideBar();
+
                    //console.log(response);
                })
        }
@@ -227,7 +221,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
             .data(shape.features)
             .enter()
             .append("path")
-            .attr("class", "q0-7 zones");
+            .attr("class", "base zones");
 
         var title= feature.append("svg:title")
             .attr("class", "pathTitle");
