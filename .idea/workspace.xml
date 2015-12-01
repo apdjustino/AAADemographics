@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd4e31bd-30a3-4fc9-8b60-9cdd94750cf7" name="Default" comment="Additional changes made by Shawn Matthews per instructions from CAM. Change to Title and About text.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="bd4e31bd-30a3-4fc9-8b60-9cdd94750cf7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/block-groups.js" afterPath="$PROJECT_DIR$/javascripts/block-groups.js" />
     </list>
     <ignored path="aaasite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +39,8 @@
       <file leaf-file-name="block-groups.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/block-groups.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7790869">
-              <caret line="154" column="104" selection-start-line="154" selection-start-column="104" selection-end-line="154" selection-end-column="104" />
+            <state vertical-scroll-proportion="0.8453608">
+              <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -76,8 +73,8 @@
         <option value="$PROJECT_DIR$/php/age-sex-grp.php" />
         <option value="$PROJECT_DIR$/php/age-grp.php" />
         <option value="$PROJECT_DIR$/stylesheets/map-template.css" />
-        <option value="$PROJECT_DIR$/javascripts/block-groups.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/javascripts/block-groups.js" />
       </list>
     </option>
   </component>
@@ -287,7 +284,19 @@
       <option name="project" value="LOCAL" />
       <updated>1449010667944</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="First attempt at adding a reset button.">
+      <created>1449011513285</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1449011513285</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Second attempt at adding a reset button.">
+      <created>1449011743426</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1449011743426</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -341,7 +350,9 @@
     <MESSAGE value="Added supermarkets points to site" />
     <MESSAGE value="made recommended changes from Maya, Jenny, and Ashley" />
     <MESSAGE value="Additional changes made by Shawn Matthews per instructions from CAM. Change to Title and About text." />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional changes made by Shawn Matthews per instructions from CAM. Change to Title and About text." />
+    <MESSAGE value="First attempt at adding a reset button." />
+    <MESSAGE value="Second attempt at adding a reset button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second attempt at adding a reset button." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -597,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/block-groups.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7790869">
-          <caret line="154" column="104" selection-start-line="154" selection-start-column="104" selection-end-line="154" selection-end-column="104" />
+        <state vertical-scroll-proportion="0.8453608">
+          <caret line="157" column="6" selection-start-line="157" selection-start-column="6" selection-end-line="157" selection-end-column="6" />
           <folding />
         </state>
       </provider>
