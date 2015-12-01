@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bd4e31bd-30a3-4fc9-8b60-9cdd94750cf7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/block-groups.js" afterPath="$PROJECT_DIR$/javascripts/block-groups.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/map-template.css" afterPath="$PROJECT_DIR$/stylesheets/map-template.css" />
     </list>
     <ignored path="aaasite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,22 +25,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="map-template.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="map-template.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/map-template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.333333">
-              <caret line="235" column="16" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="16" />
-              <folding>
-                <element signature="e#3878#3947#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.29160306">
+              <caret line="233" column="72" selection-start-line="233" selection-start-column="72" selection-end-line="233" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="block-groups.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="block-groups.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/block-groups.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6848306">
+            <state vertical-scroll-proportion="0.0">
               <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
               <folding />
             </state>
@@ -74,9 +71,9 @@
       <list>
         <option value="$PROJECT_DIR$/php/age-sex-grp.php" />
         <option value="$PROJECT_DIR$/php/age-grp.php" />
-        <option value="$PROJECT_DIR$/stylesheets/map-template.css" />
         <option value="$PROJECT_DIR$/javascripts/block-groups.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/stylesheets/map-template.css" />
       </list>
     </option>
   </component>
@@ -304,7 +301,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449011764158</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Third attempt at adding a reset button. Justin I hope if you are watching this you are laughing at me.">
+      <created>1449012166868</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1449012166868</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -360,7 +363,8 @@
     <MESSAGE value="Additional changes made by Shawn Matthews per instructions from CAM. Change to Title and About text." />
     <MESSAGE value="First attempt at adding a reset button." />
     <MESSAGE value="Second attempt at adding a reset button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Second attempt at adding a reset button." />
+    <MESSAGE value="Third attempt at adding a reset button. Justin I hope if you are watching this you are laughing at me." />
+    <option name="LAST_COMMIT_MESSAGE" value="Third attempt at adding a reset button. Justin I hope if you are watching this you are laughing at me." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -371,9 +375,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -403,9 +405,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -427,9 +427,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="271" column="17" selection-start-line="271" selection-start-column="17" selection-end-line="271" selection-end-column="17" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -459,9 +457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="271" column="17" selection-start-line="271" selection-start-column="17" selection-end-line="271" selection-end-column="17" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -491,9 +487,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="271" column="17" selection-start-line="271" selection-start-column="17" selection-end-line="271" selection-end-column="17" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -523,9 +517,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="271" column="17" selection-start-line="271" selection-start-column="17" selection-end-line="271" selection-end-column="17" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -555,9 +547,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="243" column="16" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="16" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,16 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/map-template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.333333">
-          <caret line="235" column="16" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="16" />
-          <folding>
-            <element signature="e#3878#3947#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.392157">
@@ -616,8 +596,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/block-groups.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6848306">
+        <state vertical-scroll-proportion="0.0">
           <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/map-template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29160306">
+          <caret line="233" column="72" selection-start-line="233" selection-start-column="72" selection-end-line="233" selection-end-column="72" />
           <folding />
         </state>
       </provider>
