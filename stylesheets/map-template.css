@@ -233,8 +233,8 @@ path.zones:hover{
 }
 /* Modified by Shawn Matthews 12/1/2015 in order to increase opacity. */
 
-.base {fill:#eff3ff; opacity:.7;}
-.q0-7 {fill:#eff3ff; opacity:.7;}
+.base {fill:#eff3ff; opacity:.5;}
+.q0-7 {fill:#eff3ff; opacity:.5;}
 .q1-7 {fill:#85B3D4; opacity:.7;}
 .q2-7 {fill:#6C9DC7; opacity:.7;}
 .q3-7 {fill:#5387BA; opacity:.7;}
