@@ -153,8 +153,8 @@ app.controller('block-groups-ctrl', function($scope, $http){
     }
 
     //Added to force a hard reset by button. Feature requested by CAM. Added by Shawn Matthews 12/1/2015
-    $scope.reloadRoute = function(){
-        $window.location.reload();
+    $scope.reload = function(){
+        location.reload();
     };
 
 
