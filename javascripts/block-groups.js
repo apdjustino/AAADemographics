@@ -152,6 +152,12 @@ app.controller('block-groups-ctrl', function($scope, $http){
 
     }
 
+    //Added to force a hard reset by button. Feature requested by CAM. Added by Shawn Matthews 12/1/2015
+    $scope.reload = function(){
+        location.reload();
+    };
+
+
     //build map
     var map = L.map("mapCanvas").setView([39.75, -104.95], 10);
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
