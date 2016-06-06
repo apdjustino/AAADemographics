@@ -159,8 +159,18 @@ app.controller('block-groups-ctrl', function($scope, $http){
 
 
     //build map
-    var map = L.map("mapCanvas").setView([39.75, -104.95], 10);
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    var MapBoxOutdoors = L.tileLayer('http://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Imagery from <a href="http://mapbox.com/about/maps/">MapBox</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        id: 'mapbox.outdoors',
+        accessToken: 'pk.eyJ1IjoiZHJjMGciLCJhIjoiY2lvbG44bXR6MDFxbHY0amJ1bTB3bGNqdiJ9.yVn2tfcPeU-adm015g_8xg'
+    });
+
+    map = L.map("mapCanvas", {
+        zoom: 10,
+        center: new L.LatLng(39.79, -105),
+        layers: [MapBoxOutdoors]
+    });
 
     //L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
@@ -260,7 +270,7 @@ app.controller('block-groups-ctrl', function($scope, $http){
                     var y = d.lat;
                     var coord = map.latLngToLayerPoint(new L.LatLng(y,x));
                     return coord.y;
-                })
+                });
                 g.selectAll(".routes")
                     .attr("d", path.pointRadius(function(d){return 2;}));
                 g.selectAll(".stops")
